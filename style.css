@@ -333,10 +333,10 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .java::before{
-    width: 60%;
+    width: 75%;
 }
 .skills-content .right .csharp::before{
-    width: 70%;
+    width: 80%;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -348,10 +348,10 @@ section .title::after{
     width: 75%;
 }
 .skills-content .right .php::before{
-    width: 70%;
+    width: 80%;
 }
 .skills-content .right .sql::before{
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -364,6 +364,7 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover{
@@ -395,6 +396,22 @@ section .title::after{
 .projects .carousel .card:hover img{
     border-color: #fff;
 }
+.projects .carousel .card a{
+    display: inline-block;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card a:hover{
+    color: crimson;
+    background: #fff;
+}
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -416,6 +433,7 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
+
 
 /* Contact styling section */
 .contact .title::after{

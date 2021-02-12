@@ -192,8 +192,8 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -565,6 +565,7 @@ section .title::after{
 
 /* Footer styling */
 footer{
+    text-align: center;
     background: #111;
     padding: 20px 23px;
     color: #fff;

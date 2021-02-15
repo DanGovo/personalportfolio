@@ -36,7 +36,7 @@ $(document).ready(function(){
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    })
+    });
 
 
     // owl carousel script
@@ -60,4 +60,34 @@ $(document).ready(function(){
             }
         }
     });
+
+    // modal script code
+    // Get modal elemnt
+    var modal = document.getElementById('modal');
+
+    // get open modal button
+    var modalBtn = document.getElementById('vmis');
+
+    // get close button
+    var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+    // lisiten fro click events
+    modalBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', outsideClick);
+
+    // function to open modal
+    function openModal(){
+        modal.style.display = 'block';
+    }
+
+    function closeModal(){
+        modal.style.display = 'none';
+    }
+
+    function outsideClick(e){
+        if(e.target == modal){
+            modal.style.display = 'none';
+        }
+    }
 });

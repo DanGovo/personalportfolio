@@ -211,7 +211,8 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
+.about .about-content .right a,
+.modal-body a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -223,7 +224,8 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content .right a:hover,
+.modal-body a:hover{
     color: crimson;
     background: none;
 }
@@ -396,7 +398,8 @@ section .title::after{
 .projects .carousel .card:hover img{
     border-color: #fff;
 }
-.projects .carousel .card a{
+.projects .carousel .card a,
+.modal-footer a{
     display: inline-block;
     background: none;
     color: #fff;
@@ -408,7 +411,8 @@ section .title::after{
     border: 2px solid #fff;
     transition: all 0.3s ease;
 }
-.projects .carousel .card a:hover{
+.projects .carousel .card a:hover,
+.modal-footer a:hover{
     color: crimson;
     background: #fff;
 }
@@ -432,6 +436,62 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+
+/* modal styling */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-header{
+    background: crimson;
+    padding: 15px;
+    color: #fff;
+}
+.modal-header h2, .modal-footer h2{
+    margin: 0;
+}
+.modal-content{
+    background-color: #fff;
+    margin: 20% auto;
+    width: 80%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+.modal-body{
+    padding: 10px 20px;
+}
+.closeBtn{
+    color: #fff;
+    float: right;
+    font-size: 50px;
+}
+.closeBtn:hover, .closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-footer{
+    background: crimson;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
